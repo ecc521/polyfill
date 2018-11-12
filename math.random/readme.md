@@ -1,8 +1,8 @@
-## Cryptographically Secure Math.random()
+# Cryptographically Secure Math.random()
 
-### How to Use:
+## How to Use:
 
-#### Step 1: Load the Polyfill
+### Step 1: Load the Polyfill
 ```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
@@ -26,7 +26,7 @@ If you also need the code on the main page, don't want to make 2 requests, and d
 2. Call eval(string_of_code) in the Worker
 
 
-#### Step 2:
+### Step 2:
 Now you will have `cryptoGenerator` defined in your global scope.
 To replace `Math.random` simply write the following line
 ```javascript
