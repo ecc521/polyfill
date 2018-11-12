@@ -2,12 +2,23 @@
 
 ### How to Use:
 
-#### Step 1:
-Place the following code before your JavaScript in your HTML file. This will load the polyfill.
+#### Step 1: Load the Polyfill
+**HTML Documents**
 ```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
+**Web Workers**
+```javascript
+self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
+```
+
+**Async Function**
+```javascript
+let polyfill = await fetch("https://ecc521.github.io/polyfill/math.random/code.js")
+polyfill = await polyfill.text()
+eval(polyfill) //Yes, I did just use eval. It runs in the global scope just like the other 2 examples
+```
 
 #### Step 2:
 Now you will have `cryptoGenerator` defined in your global scope.
@@ -29,10 +40,8 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 ### _So why don't you automatically overwrite `Math.random`?_
 
-
-The current design allows you to:
-1. Use a variable other that Math.random
-2. Use the code **In Web Workers**
+1. Allow variable(s) other that Math.random
+2. Allow use **In Web Workers**
 
 
 **If you want to keep `Math.random`, try the following:**
