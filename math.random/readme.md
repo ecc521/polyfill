@@ -30,4 +30,5 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 ### Browser Support
 [View the Stats on Can I Use](https://caniuse.com/#feat=getrandomvalues)
+
 I do handle the ms prefix, and therefore support IE11
