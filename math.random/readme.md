@@ -4,7 +4,9 @@
 
 #### Step 1:
 Place the following code before your JavaScript in your HTML file
+```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
+```
 
 This will load the polyfill
 
