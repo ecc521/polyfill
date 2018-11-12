@@ -3,12 +3,13 @@
 ## How to Use:
 
 ### Step 1: Load the Polyfill
+**Synchronus Approach (For HTML Documents)**
 ```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
 
-**If you perfer not to block the main thread, run this in an async function**
+**Asynchronus Approach**
 ```javascript
 let polyfill = await fetch("https://ecc521.github.io/polyfill/math.random/code.js")
 polyfill = await polyfill.text()
@@ -16,7 +17,7 @@ eval(polyfill) //Yes, I did just use eval. It runs in the global scope just like
 ```
 
 
-**Using Web Workers**
+**Inside Web Workers**
 ```javascript
 self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
 ```
