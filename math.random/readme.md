@@ -15,10 +15,8 @@ polyfill = await polyfill.text()
 eval(polyfill) //Yes, I did just use eval. It runs in the global scope just like the other 2 examples
 ```
 
-If you are just using the code in a Web Worker, this is probably your best bet:
 
-
-**Web Workers**
+**Using Web Workers**
 ```javascript
 self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
 ```
