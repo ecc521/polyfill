@@ -16,15 +16,17 @@ To replace `Math.random` simply write the following line
 Math.random = self.cryptoGenerator(length)
 ```
 
-**If your wondering why I don't automatically overwrite Math.random, read on below**
+**If your wondering why I don't automatically overwrite `Math.random`, read on below**
 
 `length` is an optional parameter. 
 If you are requesting large volumes of random numbers, don't bother setting `length` (or set it to 65534).
 
 Otherwise, if you want to save a few milliseconds of initialization time, set `length` to the highest amount of calls you expect to make, multiplied by 7
 
-
-
+**If you want to keep `Math.random`, try the following:**
+```javascript
+_whatever_variable_you_want = self.cryptoGenerator(length)
+```
 
 
 
