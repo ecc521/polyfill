@@ -3,17 +3,11 @@
 ### How to Use:
 
 #### Step 1: Load the Polyfill
-**HTML Documents**
 ```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
-
-
-**Web Workers**
-```javascript
-self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
-```
+If you perfer not to block the main thread:
 
 **Async Function**
 ```javascript
@@ -21,6 +15,19 @@ let polyfill = await fetch("https://ecc521.github.io/polyfill/math.random/code.j
 polyfill = await polyfill.text()
 eval(polyfill) //Yes, I did just use eval. It runs in the global scope just like the other 2 examples
 ```
+
+If you are just using the code in a Web Worker, this is probably your best bet:
+
+
+**Web Workers**
+```javascript
+self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
+```
+
+If you also need the code on the main page, don't want to make 2 requests, and don't trust disk cache, you will need to:
+1. Send String(cryptoGenerator) to the Worker
+2. Call eval(string_of_code) in the Worker
+
 
 #### Step 2:
 Now you will have `cryptoGenerator` defined in your global scope.
