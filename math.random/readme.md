@@ -3,12 +3,11 @@
 ### How to Use:
 
 #### Step 1:
-Place the following code before your JavaScript in your HTML file
+Place the following code before your JavaScript in your HTML file. This will load the polyfill.
 ```html
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
-This will load the polyfill
 
 #### Step 2:
 Now you will have cryptoGenerator defined in your global scope.
