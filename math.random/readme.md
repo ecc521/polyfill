@@ -26,6 +26,7 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 ### Performance:
 ~1,350 calls per *millisecond*, or 1,350,000 calls per second
+
 *Measured on a Samsung Chromebook Plus with `length` set at it's default value*
 
 
