@@ -10,12 +10,11 @@ Place the following code before your JavaScript in your HTML file. This will loa
 
 
 #### Step 2:
-Now you will have cryptoGenerator defined in your global scope.
-To replace Math.random simply write the following line
+Now you will have `cryptoGenerator` defined in your global scope.
+To replace `Math.random` simply write the following line
 ```javascript
 Math.random = self.cryptoGenerator(length)
 ```
-
   
 `length` is an optional parameter. 
 If you are requesting large volumes of random numbers, don't bother setting `length` (or set it to 65534).
@@ -24,5 +23,4 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 ### Performance:
 ~1,350 calls per *millisecond*, or 1,350,000 calls per second
-
 *Measured on a Samsung Chromebook Plus with `length` set at it's default value*
