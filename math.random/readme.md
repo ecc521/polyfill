@@ -7,9 +7,8 @@
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
-If you perfer not to block the main thread:
 
-**Async Function**
+**If you perfer not to block the main thread, run this in an async function**
 ```javascript
 let polyfill = await fetch("https://ecc521.github.io/polyfill/math.random/code.js")
 polyfill = await polyfill.text()
