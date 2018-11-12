@@ -8,6 +8,8 @@
 <script src="https://ecc521.github.io/polyfill/math.random/code.js"></script>
 ```
 
+
+
 **Web Workers**
 ```javascript
 self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
