@@ -29,4 +29,4 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 
 ### Browser Support
-[https://caniuse.com/#feat=getrandomvalues](View the Stats on Can I Use)
+[View the Stats on Can I Use](https://caniuse.com/#feat=getrandomvalues)
