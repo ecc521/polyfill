@@ -24,12 +24,14 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 
 
+
 **_So why don't you automatically overwrite `Math.random`?_**
 
 
 The current design allows you to:
 1. Use a variable other that Math.random
 2. Use the code **In Web Workers**
+
 
 **If you want to keep `Math.random`, try the following:**
 ```javascript
