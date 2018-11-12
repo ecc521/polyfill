@@ -1,0 +1,1 @@
+## Cryptographically Secure Math.random()
