@@ -12,7 +12,7 @@ This will load the polyfill
 Now you will have cryptoGenerator defined in your global scope.
 To replace Math.random simply write the following line
 '''javascript
-Math.random = self.cryptoGenerator(length)
+  Math.random = self.cryptoGenerator(length)
 '''
 Length is an optional parameter. 
 If you are requesting large volumes of random numbers, don't bother setting it (or set it to 65534).
