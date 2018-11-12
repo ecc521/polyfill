@@ -25,6 +25,8 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 
 
 
+
+
 **_So why don't you automatically overwrite `Math.random`?_**
 
 
