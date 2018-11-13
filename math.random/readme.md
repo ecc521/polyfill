@@ -1,10 +1,12 @@
-# Cryptographically Secure Math.random()
+# Cryptographically Secure `Math.random()`
 
 ## Why?
 
-Math.random() is **_not cryptographically secure_**, and the spec allows practically any implementation to be used - even those that aren't so good.
+`Math.random()` is **_not cryptographically secure_**, and the spec allows practically any implementation to be used - even those that aren't so good.
 
 [See this article for an example](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d) (V8 has since fixed their PRNG)
+
+This replacement for `Math.random()` uses `crypto.getRandomValues()` to generate you 53 bits of randomness (unlike the old V8 implementation at 32), and offers excellent performance (~17 times faster than some other designs). 
 
 
 ## How to Use:
