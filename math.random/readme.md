@@ -75,4 +75,4 @@ _whatever_you_want = self.cryptoGenerator(length)
 ### Browser Support
 [View the Stats on Can I Use](https://caniuse.com/#feat=getrandomvalues)
 
-I do handle the ms prefix, and therefore support IE11
+Since I handle the ms prefix, and do not use the exponentation operator (\*\*), Internet Explorer 11 should be supported
