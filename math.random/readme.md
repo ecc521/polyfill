@@ -1,5 +1,12 @@
 # Cryptographically Secure Math.random()
 
+## Why?
+
+Math.random() is **_not cryptographically secure_**, and the spec allows practically any implementation to be used - even those that aren't so good.
+
+[See this article for an example](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d) (V8 has since fixed their PRNG)
+
+
 ## How to Use:
 
 ### Step 1: Load the Polyfill
