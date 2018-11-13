@@ -69,7 +69,7 @@ _whatever_you_want = self.cryptoGenerator(length)
 ### Performance:
 ~1,350 calls per *millisecond*, or 1,350,000 calls per second
 
-*Measured on a Samsung Chromebook Plus with `length` set at it's default value*
+*Measured on a Samsung Chromebook Plus with `length` set at it's default value (65534)*
 
 
 ### Browser Support
