@@ -47,8 +47,7 @@ Math.random = self.cryptoGenerator(length)
 `length` is an optional parameter. 
 If you are requesting large volumes of random numbers, don't bother setting `length` (or set it to 65534).
 
-Otherwise, if you want to save a few milliseconds of initialization time, set `length` to the highest amount of calls you expect to make, multiplied by 7
-
+Otherwise, you can save a few milliseconds of initialization time by setting `length` to 7 times the amount of calls you expect to make.
 
 
 
