@@ -66,7 +66,7 @@ self.cryptoGenerator = function(length){
         
         
         //Shifting 8 bits by 24 may flip the sign bit, and make the number negative
-        //2**24 === 2<<23 - THIS IS NOT A TYPO
+        //Math.pow(2,24) === 2<<23 - THIS IS NOT A TYPO
         bottom32 += _array[_count+3] * (2<<23) //Fill in bits 25-32
         
             
@@ -83,13 +83,13 @@ self.cryptoGenerator = function(length){
         
         //Now we need to combine bottom32 and top21
         //Bitwise operations can't be in the following line - they would overflow
-        let full53 = (top21*(2**32)) + bottom32 //We don't actually need to group them due to order of operations, but it makes it clearer
+        let full53 = (top21*(Math.pow(2,32))) + bottom32 //We don't actually need to group them due to order of operations, but it makes it clearer
                 
         _count += 7 //Increment Count
         
         //Math.random() returns a decimal between 0 and 1
         //Lets divide our value so that we match this behavior
-        full53 /= 2**53
+        full53 /= Math.pow(2,53)
         
         return full53 //And return the value
     }
