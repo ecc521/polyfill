@@ -51,7 +51,7 @@ Otherwise, if you want to save a few milliseconds of initialization time, set `l
 2. Allow use **In Web Workers**
 
 
-**If you want to keep `Math.random`, try the following:**
+**If you want to use something other than `Math.random`, try the following:**
 ```javascript
 _whatever_you_want = self.cryptoGenerator(length)
 ```
