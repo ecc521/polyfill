@@ -32,7 +32,7 @@ self.importScripts('https://ecc521.github.io/polyfill/math.random/code.js');
 ```
 
 If you also need the code on the main page, don't want to make 2 requests, and don't trust disk cache, you will need to:
-1. Send String(cryptoGenerator) to the Worker
+1. Send ```javascript String(cryptoGenerator)``` to the Worker
 2. Call eval(string_of_code) in the Worker
 
 
